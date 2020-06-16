@@ -1,0 +1,26 @@
+<div class="content" >
+    <div class="container-fluid">
+      <div class="col-md-8 col-12 mr-auto ml-auto">
+        <!--      Wizard container        -->
+        <div class="wizard-container">
+          <div class="card card-wizard active" data-color="rose" id="wizardProfile">
+            <form [formGroup]="Book" action="#" method="" novalidate="novalidate">
+              <!--        You can switch " data-color="primary" "  with one of the next bright colors: "green", "orange", "red", "blue"       -->
+              <div class="card-header text-center">
+                    <div class="form-group">
+                      <label>Book Name........</label>
+                      <input formControlName="book" type="text" class="form-control">
+                  </div>
+              </div>
+              <div class="card-footer">
+                <div class="mr-auto">
+                  <input type="button" class="btn btn-next btn-fill btn-rose btn-wd" (click)="addbook()" name="addbook" value="Add Book">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- wizard container -->
+      </div>
+    </div>
+  </div>
